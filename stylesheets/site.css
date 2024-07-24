@@ -16,22 +16,23 @@ h6 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* 
 p {
     font-family: 'Courier New', Courier, monospace;
-}
+} */
 
 #banner {
-    background-color: darkkhaki;
+    /* background-color: darkkhaki; */
     padding-bottom: 2px;
     padding-top: 1px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 #banner p {
     margin: 0;
 }
 
-#nav,
+/* #nav,
 nav {
     background-color: cadetblue;
     padding: 10px;
@@ -45,20 +46,20 @@ nav a {
     font-size: large;
     margin-right: 10px;
     padding: 10px;
-}
+} */
 
-#nav a:hover,
+/* #nav a:hover,
 nav a:hover {
     background-color: aquamarine;
     color: cadetblue
-}
+} */
 
-#main,
+/* #main,
 main {
     width: 80%;
     margin: 0 auto;
-}
-
+} */
+/* 
 #footer,
 footer {
     background-color: gray;
@@ -71,7 +72,7 @@ footer a {
     color: blue;
     padding: 10px;
 
-}
+} */
 
 article {
     margin-bottom: 10px;

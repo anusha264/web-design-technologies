@@ -5,30 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
     <link rel="stylesheet" href="stylesheets/site.css" />
-
 </head>
 
 <body>
     <header>
-        <div id="banner">
+        <div id="banner" class="bg-secondary text-white text-center">
             <p>Puppies and doggieess website</p>
         </div>
-        <nav>
-            <!-- Anchor tags used for internal navigation -->
+        <!-- <nav>
+           
             <a href="index.html">Home</a>
             <a href="about_us.html">About Us</a>
             <a href="contact_us.html">Contact Us</a>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Puppy Den</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="about_us.html">About Us</a>
+                        <a class="nav-link" href="contact_us.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         <h1>Contact Us</h1>
         <hr />
 
         <article>
             <h2>Locations</h2>
-            <table>
+            <table class="table table-striped table-hover">
                 <tr>
                     <th>Logo</th>
                     <th>Location</th>
@@ -69,7 +86,34 @@
         <article>
             <h2>General Enquiries</h2>
             <form action="confirmation.html" id="contactform">
-                <label for="fullname">Name: *</label>
+                <div class="mb-3">
+                    <label for="fullname" class="form-label">Name: *</label><br />
+                    <input required type="text" class="form-control" id="fullname" name="fullname"
+                        placeholder="eg. John Doe" />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address: *</label><br />
+                    <input required type="email" class="form-control" id="email" name="emailaddress"
+                        placeholder="eg. john@email.com" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Are you Working?</label><br />
+                    <input id="yesEmployed" type="radio" value="Y" name="employed" class="form-check-input" /> <label
+                        class="form-check-label" for="yesEmployed">
+                        Yes
+                    </label>
+                    <input id="noEmployed" type="radio" value="N" name="employed" class="form-check-input" /> <label
+                        class="form-check-label" for="noEmployed">
+                        No
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label for="inquiry" class="form-label">State your inquiry *</label>
+                    <textarea class="form-control" required cols="50" rows="10" maxlength="150" id="inquiry"
+                        name="inquiry"></textarea>
+                </div>
+
+                <!-- <label for="fullname">Name: *</label>
                 <br />
                 <input required type="text" id="fullname" name="fullname" />
                 <br />
@@ -91,24 +135,43 @@
                 <br />
                 <label for="enquiry">Enter Enquiry *</label>
                 <br />
-                <textarea required cols="50" rows="10" maxlength="150" id="enquiry" name="enquiry"></textarea>
+                <textarea required cols="50" rows="10" maxlength="150" id="enquiry" name="enquiry"></textarea> -->
                 <br />
                 <br />
 
-                <input type="submit" />
-                <button type="button" onclick="ClearForm()">Clear</button>
+                <input type="submit" class="btn btn-success" />
+                <button type="button" onclick="ClearForm()" class="btn btn-warning">Clear</button>
 
             </form>
         </article>
     </main>
 
-    <footer>
+    <!-- <footer>
         <br />
         <a href="https://www.amazon.com">Amazon</a>
         <a href="https://github.com/anusha264/web-design-technologies" target="_blank">Git Link to this website</a>
+    </footer> -->
+    <footer class="py-3 mt-4 bg-secondary" data-bs-theme="dark">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="about_us.html" class="nav-link px-2 text-body-secondary">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact_us.html" class="nav-link px-2 text-body-secondary">Contact Us</a>
+            </li>
+        </ul>
+        <p class="text-center text-body-secondary">&copy;
+            <a href="https://github.com/anusha264/web-design-technologies" target="_blank" class="nav-link">
+                Anusha Kotagiri Website
+            </a>
+        </p>
     </footer>
 
     <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/site.js"></script>
 </body>
 
