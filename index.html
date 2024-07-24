@@ -54,9 +54,15 @@
             <br />
 
             <audio controls>
-                <source src="music/puppies.mp3" type="audio/mp3" />
+                <source type="audio/mp3" />
                 Your browser doesnt support the video>
             </audio>
+
+            <br />
+            <br />
+            <button id="jqueryBtn">Hide P Tags - Jquery</button>
+            <button onclick="hidePTags()">Hide P Tags - JavaScript</button>
+
         </div>
 
         <div id="footer">
@@ -65,6 +71,24 @@
             <a href="https://github.com/anusha264/web-design-technologies" target="_blank">Git Link to this website</a>
         </div>
     </div>
+    
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/site.js"></script>
+
+    <!-- <script>
+        function hidePTags() {
+            console.log('here');
+            let ptags = document.getElementsByTagName('p');
+            for (let item of ptags) {
+                item.style.visibility = 'hidden';
+
+            }
+        }
+        $('#jqueryBtn').click(function(){
+    $('p').hide();
+})
+    </script> -->
+
 </body>
 
 </html>
